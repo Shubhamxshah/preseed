@@ -49,7 +49,7 @@ const Testimonials = () => {
     }, 2000); // Change testimonial every 5 seconds
     
     return () => clearInterval(interval); // Clean up on component unmount
-  }, []); // Re-create interval when activeIndex changes
+  }); // Re-create interval when activeIndex changes
 
   const handlePrev = () => {
     if (isAnimating) return;
